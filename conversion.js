@@ -1,0 +1,1 @@
+console.log(1 + '2'); // number coverted to string when using +
