@@ -14,3 +14,26 @@ myPromise.then(
 );
 
 
+
+// Add Header to other pages
+
+document.addEventListener("DOMContentLoaded",function(){
+
+    console.log(fetch('index.html'), 'fetch console')
+
+    fetch('index.html')
+            .then(response => {
+
+                console.log(response, 'res before .text')
+                console.log(response.text(),"response after .text")
+               return  response.text()
+            })
+            .then(data=>{
+
+                document.getElementById('header-placeholder').innerHTML = data;
+            })
+
+            .catch(error=> console.error("Error Loading Header:",error));
+
+
+})
