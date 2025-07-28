@@ -1,10 +1,13 @@
 let latin,europe,other;
 
-[latin, europe] = ['Columbia','Luxemoborg'];
+latin = ['Columbia','chile']
+europe = ['luxemeborg','norway']
 
-console.log(latin);
+latin.forEach((latincountries) => console.log(latincountries))
+europe.forEach((europeancountries) => console.log(europeancountries));
 
-console.log(europe);
+// console.log(latin);
+// console.log(europe);
 
 [latin,europe,...other] = ['ecudor','holland','korea','nepal','egypt','india','ghana']
 
