@@ -10,5 +10,5 @@ const employee = {
 // console.log(employee.logout)
 
 
-let {ename,login,logout,place} = employee
-console.log( ename,login,logout,place,)
+let {ename :  employeename,login,logout,place,salary=250000} = employee  //ename renamed to employeename
+console.log( employeename,login,logout,place,salary)
